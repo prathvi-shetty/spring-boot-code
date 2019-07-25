@@ -1,0 +1,22 @@
+
+<p [style.color] = "myColor"> <!-- property binding -->
+  Start editing to see some magic happen :)
+</p>
+<a [href]= "myUrl"> visit here</a> <!-- property binding -->
+<input type="text" [(ngModel)] = "name"> <!-- 2 way binding -->
+<h3 *ngIf = "shouldDisplay">
+  this is ng If directive
+</h3>
+<p></p>
+
+<button (click) = "show()"> Display </button> <!-- event binding -->
+
+<div *ngFor ="let list of myList">
+  <p>
+    {{list}}
+    </p>
+</div> 
+
+<div *ngFor = "let item of objects">
+ <p>   <a [href]="item.link">{{item.name}} </a> </p>
+</div>
